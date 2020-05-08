@@ -13,7 +13,7 @@
                    <p> &nbsp;&nbsp;<p/>
                    
                    
-                   <button id="btn">Click here   2 !!!</button>
+                   <button id="btn">Click here   3 !!!</button>
                     <p> &nbsp;&nbsp;<p/>
                     <p> &nbsp;&nbsp;<p/>
 
@@ -33,10 +33,11 @@ buttonElement.addEventListener('click', function (event) {
   alert('Element clicked through function!');
 });
                        
-                       
-document.getElementById("inlineFrameExample").contentDocument.addEventListener('click', function(event) {
-    alert('Element clicked through function!');
-}, false);
+     
+document.getElementById("inlineFrameExample").contentWindow.document.body.onclick = function() {
+        alert('Element clicked through function!');
+    }
+}
 
     </script>
                    
