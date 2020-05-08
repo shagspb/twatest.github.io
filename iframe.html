@@ -32,11 +32,13 @@ buttonElement.addEventListener('click', function (event) {
 });
                        
      
-function iframeclick() {
-    document.getElementById("inlineFrameExample").contentWindow.document.body.onclick = function() {
-       alert('Element clicked through function!');
-    }
-}
+$(document).ready(function(){
+    $("inlineFrameExample").load(function(){
+        $(this).contents().on("click", function(){
+            alert("Click detected inside iframe.");
+        });
+    });
+});
 
 </script>
                    
