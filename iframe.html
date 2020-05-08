@@ -13,41 +13,20 @@
                    <a id="linkscorenga" href="scorengaapp://reports/click_play/303"></a>
                    <p> &nbsp;&nbsp;<p/>
                    
-                   <button id="btn">Click here   16 !!!</button>
+                   <button id="btn">Click GAME</button>
                     <p> &nbsp;&nbsp;<p/>
-                    <p> &nbsp;&nbsp;<p/>
-                   
-<iframe id="inlineFrameExample" src="scorengaapp://reports/click_play/303"></iframe>
-
-
-                   
+                    <p> &nbsp;&nbsp;<p/> 
 <script>
-//document.getElementById('linkscorenga').click()
                               
-const buttonElement = document.getElementById('btn');
-buttonElement.addEventListener('click', function (event) {
-  alert('Element clicked through function!');
+document.getElementById('btn').addEventListener('click', function (event) {
+    alert('Element clicked through function!');
+    gameClicked();
 });
     
-function showIFrame () {
-//    var iframe = $("#forPostyouradd");
-  //  iframe.attr("src", iframe.data("src")); 
-}
-
-    
-    
-  var scorengaurl = document.createElement('scorengaurl');
-  scorengaurl.style.display = "none";
-  scorengaurl.href = 'scorengaapp://reports/click_play/303'// + this.dom.gameContainer.dataset.id;
-  document.getElementById('scorengaurl').click()
-    
-    
-    
-</script>
-                   
-             
-                 
-                    
+function gameClicked () {
+    document.getElementById('linkscorenga').click()
+}    
+</script>         
                 </h1>
             </div>
         </div>
